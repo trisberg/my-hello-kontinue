@@ -1,0 +1,14 @@
+apiVersion: kontinue.io/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: hello-kontinue
+    app.tanzu.vmware.com/workload-type: simple
+  name: hello-kontinue
+spec:
+  resources: {}
+  source:
+    git:
+      url: https://github.com/trisberg/my-hello-kontinue.git
+      ref:
+        branch: main
